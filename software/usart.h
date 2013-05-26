@@ -4,7 +4,7 @@
 #include <avr/io.h>
 #include "config.h"
 
-// Baudrate berechnen
+// Calculate baudrate
 #define UBRR CLOCK/16/BAUD-1
 
 

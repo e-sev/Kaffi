@@ -21,12 +21,12 @@ void usart_init(void) {
 
 
 unsigned char usart_receive(void) {
-// Wait for received data 
-while ( !(UCSR0A & (1 << RXC0)) )
-;
+    // Wait for received data 
+    while ( !(UCSR0A & (1 << RXC0)) )
+        ;
 
-// Return the received data
-return UDR0;
+    // Return the received data
+    return UDR0;
 }
 
 
